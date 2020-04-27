@@ -1,0 +1,31 @@
+Todo:
+
+clean up flyout and tag up alerts.  Better UX UI.
+
+End game scenario
+
+    
+
+Extra innings scenario
+
+
+
+
+DONE: 
+
+Fix double and triple play exceeding number of outs
+
+Steal bases
+
+Detailed play-by-play
+
+Tag up option on fly out
+
+Alerts for inning change and clearing the counts.
+
+Code Clean up: split up updatescoreboard function by using it as an end inning function and split out the updates into separate funcitons.
+
+Color indicators for inning changes
+
+Create new variable to track number of runs in a play. Clear it out after each play.
+    Use this to update runs in an inning and increment the team totals.

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dice Ball</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="diceballJS.js"></script>
+        <script type="text/javascript">
+            
+        </script>
+        
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 50%;
+              padding: 10px;
+              height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            td, th {
+            border: 3px solid #dddddd;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <img id="field" src="images/BatterUp.png"/>
+            </div>
+            <div class="column">
+                <button id="pitch" onclick="pitch()">Pitch</button>
+                <button id="secondSteal" disabled onclick="stealSecond()">Steal Second</button>
+                <button id="thirdSteal" disabled onclick="stealThird()">Steal Third</button>
+                <br>
+                <div id="play"></div>
+                <br>
+                <div id="strikes"></div>
+                <br>
+                <div id="balls"></div>
+                <br>
+                <div id="outs"></div>
+                <br>
+                <div id="inning"></div>
+                
+                <table>
+                    <tr>
+                      <th>Teams</th>  
+                      <th id="1" style="background-color:yellow;">1</th>
+                      <th id="2">2</th>
+                      <th id="3">3</th>
+                      <th id="4">4</th>
+                      <th id="5">5</th>
+                      <th id="6">6</th>
+                      <th id="7">7</th>
+                      <th id="8">8</th>
+                      <th id="9">9</th>
+                      <th id="total">Total</th>
+                    </tr>
+                    <tr>
+                      <td id="Top" style="background-color:yellow;">Away Team</td>
+                      <td id="Top1">-</td>
+                      <td id="Top2">-</td>
+                      <td id="Top3">-</td>
+                      <td id="Top4">-</td>
+                      <td id="Top5">-</td>
+                      <td id="Top6">-</td>
+                      <td id="Top7">-</td>
+                      <td id="Top8">-</td>
+                      <td id="Top9">-</td>
+                      <td id="TopTotal">-</td>
+                    </tr>
+                    <tr>
+                      <td id="Bottom">Home Team</td>
+                      <td id="Bottom1">-</td>
+                      <td id="Bottom2">-</td>
+                      <td id="Bottom3">-</td>
+                      <td id="Bottom4">-</td>
+                      <td id="Bottom5">-</td>
+                      <td id="Bottom6">-</td>
+                      <td id="Bottom7">-</td>
+                      <td id="Bottom8">-</td>
+                      <td id="Bottom9">-</td>
+                      <td id="BottomTotal">-</td>
+                    </tr>                    
+                  </table>
+            </div>
+        </div>
+        
+       
+        
+            
+        
+        
+    </body>
+</html>
